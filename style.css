@@ -1,0 +1,565 @@
+.header {
+   display: flex;
+   width: 100%;
+   justify-content: flex-end;
+   gap: 40px;
+   margin-top: 2rem;
+}
+
+.logo {
+    align-self: flex-start;
+    position: absolute;
+    left: 30px;
+}
+
+ .header_element {
+    
+    line-height: 24px;
+    margin-right: 3rem;
+}
+
+main {
+    text-align: center;
+    margin-top: 6rem;
+    width: 100%;
+}
+
+.main h1 {
+    padding-bottom: 18px;
+
+}
+
+.main-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 10px;
+
+
+}
+
+.img-main { 
+   justify-self: center;
+   padding: 10px;
+   height: 400px;
+   overflow: hidden; 
+   
+}
+
+.img-main img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 25px;
+
+}
+
+   
+
+main button {
+    border: 3px #285E67;
+    background-color: #285E67;
+    border-radius: 40px;
+    width: 200px;
+    height: 56px;
+    font-size: 20px;
+    margin-top: 15px;
+    color: white;
+}
+
+main h1 {
+    font-size: 60px;
+
+}
+
+main h3 {
+    padding-top: 50px;
+    font-size: 17px;
+    padding-bottom: 30px;
+}
+
+
+.yoga {
+    margin: 7.5rem;
+    background-color:#F4F4F4 ;
+    display: flex;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+    gap: 70px;
+    border-radius: 13px;
+}
+
+.Section1 {
+    display: grid;
+    grid-template-columns:  1fr 1fr;
+    grid-template-areas: 
+    "a a"
+    "b c";
+    gap: 10px;
+    width: 50%;
+}
+.Section1 img {
+    background-color: #285E67;
+    width: 50px;
+    height: 50px;
+    border-radius: 12px;
+    padding: 8px;
+    margin-bottom: 25px;
+
+}
+
+.Section1 .Lorem1 {
+    grid-area: b;
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+    margin-bottom: 40px;
+}
+
+.Section1 .Lorem2 {
+    grid-area: c;
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+    margin-bottom: 40px;
+}
+
+
+.Wellbeing {
+    grid-area: a;
+    grid-column: 1 / -1;
+    margin-bottom: 30px;
+    padding-top: 100px;
+    font-size: 50px;
+    justify-content: start;
+    align-content: start;
+}
+
+
+ .img_yoga img {
+    margin-top: 100px;
+}
+
+
+.section2 {
+    display: flex;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+    gap: 70px;
+    
+
+}
+
+.section2 .section2_img {
+    height: 600px;
+    width: 600px;
+    overflow: hidden;
+    margin-left: 20px;
+
+}
+.section2_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    
+
+}
+
+
+.section2_second_block {
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-content: flex-start;
+    width: 40%;
+    margin-right: 50px;
+    padding-top: 80px;
+}
+
+.lorem_nav {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    
+
+}
+
+.nav_element p {
+    
+    padding-left: 70px;
+    
+}
+
+.nav_element img {
+    position: relative;
+    top: 50px;
+    
+}
+
+.section2_second_block h2 {
+    padding-bottom: 40px;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.nav_element {
+   padding-bottom: 15px;
+    
+}
+
+
+.section3 {
+    margin: 7.5rem;
+    background-color:#F4F4F4 ;
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+    gap: 20px;
+    padding-bottom: 100px;
+    border-radius: 15px;
+}
+
+.section3 > .cocteil {
+    justify-content: center;
+    align-content: center;
+    padding-left: 90px;
+    
+}
+
+.section3_second {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "Eat Eat"
+    "Lorem2 Lorem3";
+    width: 60%;
+   
+}
+
+.section3_second img {
+    background-color: #EBBFAE;
+    width: 50px;
+    height: 50px;
+    border-radius: 12px;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+.section3_second .Lorem2 {
+    grid-area: Lorem2;
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+    padding-bottom: 50px;
+    font-size: 18px;
+    gap: 30px;
+    padding-right: 40px;
+}
+
+.section3_second .Lorem3 {
+    grid-area: Lorem3;
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+    padding-bottom: 50px;
+    font-size: 18px;
+    gap: 30px;
+    padding-right: 40px;
+}
+
+
+
+.section3_second .Eat {
+    grid-area: Eat;
+    margin-bottom: 30px;
+    padding-top: 100px;
+    font-size: 60px;
+}
+
+.section4_first {
+    position: relative;
+    overflow: hidden;
+    height: 800px;
+    text-align: center;
+    margin: auto;
+    margin-left: 70px;
+    margin-right: 70px;
+}
+
+
+.section4 > img {
+    width: 90%;
+    height: auto;
+    margin: 70px;
+    object-fit: cover;
+    border-radius: 20px;
+     
+
+}
+
+.section4_first > .flex_block > button {
+    position: absolute;
+    top: 52%;
+    left: 40%;
+    border: 1px solid white;
+    background-color: transparent;
+    border-radius: 40px;
+    width: 270px;
+    height: 56px;
+    font-size: 20px;
+    margin-top: 15px;
+    color: white;
+    margin: auto;
+}
+
+.section4_first h2  {
+    
+  position: absolute;
+  top: 34%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white; 
+  font-weight: bolder;
+  font-size: 43px;
+  
+  padding: 10px;
+
+}
+
+.section4_first h4  {
+    
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white; 
+    font-size: 17px;
+    
+    padding: 10px;
+  
+  }
+
+  .flex_block > img {
+    width: 65px;
+    height: 70px;
+    position: absolute;
+    top: 20%;
+    left: 49%;
+    transform: translate(-50%, -50%);
+    color: white; 
+    padding: 8px;
+    border: 2px solid white;
+    border-radius: 8px;
+    margin: auto;
+
+  }
+
+
+
+  .section4_second {
+    position: relative;
+    z-index: 1000;
+    bottom: 215px;
+    display: flex;
+    background-color: #FCE2D7;
+    justify-content: space-between;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 150px;
+    border-radius: 17px;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+
+  .section4_second > .plant {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+   
+  }
+
+
+
+  .section4_second > .plant > img {
+    width: 80px;
+    margin-bottom: 12px;
+    margin-left: 25px;
+
+  }
+
+  footer {
+    background-color: #285E67;
+    margin: auto;
+  }
+
+  .footer {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    gap: 40px;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+    padding-top: 70px;
+    
+ }
+ 
+ footer .logo {
+     align-self: flex-start;
+     position: absolute;
+     left: 30px;
+     color: white;
+ }
+ 
+  .footer_element {
+     color: white;
+     line-height: 24px;
+     margin-right: 3rem;
+ }
+
+ .media {
+    display: flex;
+    margin-top: 30px;
+    margin-left: 30px;
+    gap: 15px;
+    padding-bottom: 70px;
+ }
+
+
+ @media (max-width: 884px) {
+
+    body {
+        margin: auto;
+    }
+    .img_yoga > img {
+        display: none;
+    }
+
+    main > h1 {
+        margin: 50px;
+    }
+    main > h3 {
+        margin: 50px;
+    }
+
+    .main-content {
+        margin: 50px;
+        
+    }
+
+    .Section1 {
+        margin: auto;
+        width: 80%;
+        gap: 50px;
+        padding-left: 70px;
+    }
+
+    .yoga {
+        width: 90%;
+        margin: auto;
+        margin: 60px;
+    }
+    .Wellbeing > h2 {
+        flex-wrap: nowrap;
+        margin: 0;
+        margin: auto;
+        text-align: center;
+    }
+
+    .Section1 > .Lorem1 {
+        text-align: center;
+    }
+
+    .Section1 > .Lorem1 > img {
+        margin: auto;
+        margin-bottom: 25px;
+    }
+
+    .Section1 > .Lorem2 {
+        text-align: center;
+    }
+
+    .Section1 > .Lorem2 > img {
+        margin: auto;
+        margin-bottom: 25px;
+    }
+
+    .section2 {
+        margin: 50px;
+    }
+
+
+    .section2_second_block {
+        padding: 0;
+        gap: 7px;
+        width: 100%;
+    }
+
+    .section2_second_block > h2 {
+        padding-bottom: 18px;
+    }
+
+    .lorem_nav {
+        margin-top: 0px;
+    }
+
+
+
+    .lorem_nav > .nav_element {
+        padding-bottom: 0px;
+    }
+
+
+    .cocteil > img {
+        display: none;
+    }
+
+    .section3_second {
+        width: 100%;
+        margin: auto;
+    }
+
+    .section3 {
+        margin: 50px;
+        width: 90%;
+    }
+
+   .section3_second > .Lorem2 {
+       text-align: center;
+    }
+
+    .section3_second > .Lorem2 > img {
+        margin: auto;
+        margin-bottom: 25px;
+    }
+
+    .section3_second > .Lorem3 {
+        text-align: center;
+     }
+ 
+     .section3_second > .Lorem3 > img {
+         margin: auto;
+         margin-bottom: 25px;
+     }
+     .section4_first {
+        margin: 50px;
+     }
+
+     .section4_first > .flex_block > button {
+        position: absolute;
+        left: 32%;
+     }
+
+     .section4_first >.flex_block > img {
+        top: 12%;
+     }
+
+     .section4_first > .flex_block > h2 {
+        top: 25%;
+     }
+
+     .section4_first > .flex_block > h4 {
+        top: 40%;
+     }
+    
+ }
