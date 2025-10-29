@@ -63,6 +63,7 @@ main button {
     height: 56px;
     font-size: 20px;
     margin-top: 15px;
+    margin-bottom: 40px;
     color: white;
 }
 
@@ -93,7 +94,7 @@ main h3 {
     grid-template-columns:  1fr 1fr;
     grid-template-areas: 
     "a a"
-    "b c";
+    "b b";
     gap: 10px;
     width: 50%;
 }
@@ -107,20 +108,13 @@ main h3 {
 
 }
 
-.Section1 .Lorem1 {
+.Section1 .Lorem {
     grid-area: b;
     display: flex;
-    flex-direction: column;
-    margin-top: 25px;
+    flex-direction: row;
+    margin-top: 35px;
     margin-bottom: 40px;
-}
-
-.Section1 .Lorem2 {
-    grid-area: c;
-    display: flex;
-    flex-direction: column;
-    margin-top: 25px;
-    margin-bottom: 40px;
+    gap: 35px;
 }
 
 
@@ -230,8 +224,8 @@ main h3 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: 
-    "Eat Eat"
-    "Lorem2 Lorem3";
+    "a a"
+    "b b";
     width: 60%;
    
 }
@@ -245,10 +239,10 @@ main h3 {
     margin-bottom: 10px;
 }
 
-.section3_second .Lorem2 {
-    grid-area: Lorem2;
+.section3_second .Lorem1 {
+    grid-area: b;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     margin-top: 25px;
     padding-bottom: 50px;
     font-size: 18px;
@@ -256,21 +250,11 @@ main h3 {
     padding-right: 40px;
 }
 
-.section3_second .Lorem3 {
-    grid-area: Lorem3;
-    display: flex;
-    flex-direction: column;
-    margin-top: 25px;
-    padding-bottom: 50px;
-    font-size: 18px;
-    gap: 30px;
-    padding-right: 40px;
-}
 
 
 
 .section3_second .Eat {
-    grid-area: Eat;
+    grid-area: a;
     margin-bottom: 30px;
     padding-top: 100px;
     font-size: 60px;
@@ -280,6 +264,7 @@ main h3 {
     position: relative;
     overflow: hidden;
     height: 800px;
+    
     text-align: center;
     margin: auto;
     margin-left: 70px;
@@ -287,20 +272,37 @@ main h3 {
 }
 
 
-.section4 > img {
-    width: 90%;
-    height: auto;
-    margin: 70px;
+.flex_block {
+  position: absolute;
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+  justify-content: flex-start;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  text-align: center;
+  color: white;
+  gap: 30px;
+}
+
+.sec4_img {
+   justify-self: center;
+   padding: 10px;
+   height: 1000px;
+   overflow: hidden; 
+}
+
+.sec4_img > img {
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
     object-fit: cover;
-    border-radius: 20px;
-     
+    border-radius: 25px;
 
 }
 
 .section4_first > .flex_block > button {
-    position: absolute;
-    top: 52%;
-    left: 40%;
     border: 1px solid white;
     background-color: transparent;
     border-radius: 40px;
@@ -310,42 +312,26 @@ main h3 {
     margin-top: 15px;
     color: white;
     margin: auto;
+    margin-bottom: 33px;
 }
 
 .section4_first h2  {
+    font-size: 3vw;
     
-  position: absolute;
-  top: 34%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white; 
-  font-weight: bolder;
-  font-size: 43px;
-  
-  padding: 10px;
 
 }
 
 .section4_first h4  {
+    margin: auto;
+    font-size: 1vw;
     
-    position: absolute;
-    top: 45%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white; 
-    font-size: 17px;
     
-    padding: 10px;
   
   }
 
   .flex_block > img {
     width: 65px;
     height: 70px;
-    position: absolute;
-    top: 20%;
-    left: 49%;
-    transform: translate(-50%, -50%);
     color: white; 
     padding: 8px;
     border: 2px solid white;
@@ -363,11 +349,12 @@ main h3 {
     display: flex;
     background-color: #FCE2D7;
     justify-content: space-between;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 15%;
+    margin-right: 15%;
     padding: 150px;
     border-radius: 17px;
     flex-wrap: wrap;
+    
     gap: 30px;
   }
 
@@ -426,14 +413,193 @@ main h3 {
  }
 
 
- @media (max-width: 884px) {
+ 
+     /* Large desktops and laptops */
+@media (min-width: 1200px) {
 
+}
+
+/* Portrait tablets and medium desktops */
+@media (min-width: 768px) and (max-width: 1199px) {
+
+        body {
+            margin: auto;
+        }
+        .img_yoga > img {
+            display: none;
+        }
+        .main-content {
+            margin: 50px;
+        }
+
+
+    
+        main > h1 {
+            margin: 50px;
+        }
+        main > h3 {
+            margin: 50px;
+        }
+    
+    
+        .Section1 {
+            margin: auto;
+            width: 100%;
+            gap: 50px;
+            padding-left: 70px;
+        }
+    
+        .yoga {
+           
+            margin: auto;
+            margin: 50px;
+        }
+        .Wellbeing > h2 {
+            flex-wrap: nowrap;
+            margin: 0;
+            margin: auto;
+            text-align: center;
+        }
+    
+        .Section1 > .Lorem {
+            text-align: center;
+            margin-top: 20px;
+        }
+    
+        .Section1 > .Lorem > img {
+            margin: auto;
+            margin-bottom: 25px;
+        }
+    
+    
+        .section2 {
+            margin: 50px;
+        }
+    
+    
+        .section2_second_block {
+            padding: 0;
+            gap: 7px;
+            width: 100%;
+        }
+    
+        .section2_second_block > h2 {
+            padding-bottom: 18px;
+        }
+    
+        .lorem_nav {
+            margin-top: 0px;
+        }
+    
+    
+    
+        .lorem_nav > .nav_element {
+            padding-bottom: 0px;
+        }
+    
+    
+        .cocteil  {
+            display: none;
+        }
+    
+        .section3_second {
+            width: 100%;
+            margin: auto;
+            gap: 60px;
+        }
+    
+        .section3_second > .Eat {
+            margin: auto;
+        }
+    
+        .section3 {
+            margin: 50px;
+            
+            
+        }
+    
+       .section3_second > .Lorem1 {
+           text-align: center;
+           margin: 0px auto;
+           padding: 0;
+           margin-left: 17px;
+           margin-right: 17px;
+
+        }
+    
+        .section3_second > .Lorem1 > img {
+            margin: auto;
+            margin-bottom: 25px;
+        }
+         .section4_first {
+            margin: 50px;
+         }
+    
+         .flex_block > h2 {
+            font-size: 3vw;
+         }
+    
+         .flex_block > h4 {
+            font-size: 2vw;
+         }
+    
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+    .section2_img {
+        margin: 0 auto;
+    }
+
+    .section2_img > img {
+        height: 550px;
+        width: 100%;
+        
+    }
+
+    .section2_second_block {
+        width: 80%;
+    }
+
+    .section2_second_block > h2 {
+        font-size: 27px;
+    }
+    .section2_second_block > h4 {
+        font-size: 17.5px;
+
+    }
+
+    .nav_element > p {
+        font-size: 14.5px;
+
+    }
+
+}
+
+@media (max-width: 869px) {
+    .section4_second {
+        width: 60%;
+        margin: 0 auto;
+        justify-content: center;
+        align-content: center;
+    }
+
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
     body {
         margin: auto;
     }
     .img_yoga > img {
         display: none;
     }
+    .main-content {
+        margin: 50px;
+    }
+
+
 
     main > h1 {
         margin: 50px;
@@ -442,61 +608,64 @@ main h3 {
         margin: 50px;
     }
 
-    .main-content {
-        margin: 50px;
-        
-    }
 
     .Section1 {
         margin: auto;
-        width: 80%;
+        width: 100%;
         gap: 50px;
         padding-left: 70px;
     }
 
     .yoga {
-        width: 90%;
+       
         margin: auto;
-        margin: 60px;
+        margin: 50px;
     }
     .Wellbeing > h2 {
         flex-wrap: nowrap;
         margin: 0;
         margin: auto;
         text-align: center;
+        font-size: 8vw;
     }
 
-    .Section1 > .Lorem1 {
+    .Section1 > .Lorem {
         text-align: center;
+        margin-top: 20px;
     }
 
-    .Section1 > .Lorem1 > img {
+    .Section1 > .Lorem > img {
         margin: auto;
         margin-bottom: 25px;
     }
 
-    .Section1 > .Lorem2 {
-        text-align: center;
+
+    .section2_img {
+        margin: 0 auto;
     }
 
-    .Section1 > .Lorem2 > img {
-        margin: auto;
-        margin-bottom: 25px;
+    .section2_img > img {
+        height: 600px;
+        width: 100%;
+        
     }
-
-    .section2 {
-        margin: 50px;
-    }
-
 
     .section2_second_block {
+        width: 70%;
         padding: 0;
-        gap: 7px;
-        width: 100%;
     }
 
     .section2_second_block > h2 {
-        padding-bottom: 18px;
+        font-size: 4vw;
+    }
+    .section2_second_block > h4 {
+        font-size:  2.5vw;
+
+    }
+
+    .nav_element > p {
+        font-size: 2vw;
+
     }
 
     .lorem_nav {
@@ -510,56 +679,210 @@ main h3 {
     }
 
 
-    .cocteil > img {
+    .cocteil  {
         display: none;
     }
 
     .section3_second {
         width: 100%;
         margin: auto;
+        gap: 60px;
     }
+
+    .section3_second > .Eat {
+        margin: auto;
+        text-align: center;
+    }
+.section3_second > .Eat > p {
+    font-size: 6vw;
+}
 
     .section3 {
         margin: 50px;
-        width: 90%;
+        
+        
     }
 
-   .section3_second > .Lorem2 {
+   .section3_second > .Lorem1 {
        text-align: center;
+       margin: 0px auto;
+       padding: 0;
+       margin-left: 17px;
+       margin-right: 17px;
+
     }
 
-    .section3_second > .Lorem2 > img {
+    .section3_second > .Lorem1 > img {
         margin: auto;
         margin-bottom: 25px;
     }
-
-    .section3_second > .Lorem3 {
-        text-align: center;
-     }
- 
-     .section3_second > .Lorem3 > img {
-         margin: auto;
-         margin-bottom: 25px;
-     }
      .section4_first {
         margin: 50px;
      }
 
-     .section4_first > .flex_block > button {
-        position: absolute;
-        left: 32%;
+     .flex_block > h2 {
+        font-size: 3vw;
      }
 
-     .section4_first >.flex_block > img {
-        top: 12%;
+     .flex_block > h4 {
+        font-size: 2vw;
      }
 
-     .section4_first > .flex_block > h2 {
-        top: 25%;
+}
+
+/* Landscape phones and smaller */
+@media (max-width: 480px) {
+    body {
+        margin: auto;
+    }
+    .img_yoga > img {
+        display: none;
+    }
+    .main-content {
+        margin: 50px;
+    }
+
+
+
+    main > h1 {
+        margin: 50px;
+    }
+    main > h3 {
+        margin: 50px;
+    }
+
+
+    .Section1 {
+        margin: auto;
+        width: 100%;
+        gap: 50px;
+        padding-left: 70px;
+    }
+
+    .yoga {
+       
+        margin: auto;
+        margin: 50px;
+    }
+    .Wellbeing > h2 {
+        flex-wrap: nowrap;
+        margin: 0;
+        margin: auto;
+        text-align: center;
+        font-size: 8vw;
+    }
+
+    .Section1 > .Lorem {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .Section1 > .Lorem > img {
+        margin: auto;
+        margin-bottom: 25px;
+    }
+
+    .section2 {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+
+    .section2_img {
+        padding: 10px;
+        height: 500px; 
+        width: 500px;
+    }
+
+    .section2_img > img {
+        height: 100%;
+        width: 70%;
+        object-fit: cover;
+        border-radius: 25px;
+        
+    }
+
+    .section2_second_block {
+        padding: 0;
+        padding-left: 100px;
+        
+    }
+
+    .section2_second_block > h2 {
+        font-size: 12vw;
+        
+    }
+    .section2_second_block > h4 {
+        font-size:  4vw;
+        
+
+    }
+
+    .nav_element > p {
+        font-size: 3vw;
+        
+
+    }
+
+    .lorem_nav {
+        margin-top: 0px;
+    }
+
+
+
+    .lorem_nav > .nav_element {
+        padding-bottom: 0px;
+    }
+
+
+    .cocteil  {
+        display: none;
+    }
+
+    .section3_second {
+        width: 100%;
+        margin: auto;
+        gap: 60px;
+    }
+
+    .section3_second > .Eat {
+        margin: auto;
+        text-align: center;
+    }
+.section3_second > .Eat > p {
+    font-size: 6vw;
+}
+
+    .section3 {
+        margin: 50px;
+        
+        
+    }
+
+   .section3_second > .Lorem1 {
+       text-align: center;
+       margin: 0px auto;
+       padding: 0;
+       margin-left: 17px;
+       margin-right: 17px;
+
+    }
+
+    .section3_second > .Lorem1 > img {
+        margin: auto;
+        margin-bottom: 25px;
+    }
+     .section4_first {
+        margin: 50px;
      }
 
-     .section4_first > .flex_block > h4 {
-        top: 40%;
+     .flex_block > h2 {
+        font-size: 3vw;
      }
+
+     .flex_block > h4 {
+        font-size: 2vw;
+     }
+}
     
- }
